@@ -2,30 +2,37 @@
 <html>
 <head>
     <title>A2 milk project</title>
-    <link rel="stylesheet" href="vendors/css/normalize.css">
-    <link rel="stylesheet" href="vendors/css/grid.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="grid.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
+
 <body>
 
-    <header>
-        <div class="navbar">
-            <div class="logo">
+<header>
+    <div class="navbar">
+
+        <div class="logo">
             <img src="logo.png.png" alt="logo-img">
         </div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
 
-    <button class="nav-btn" onclick="openRegistration()">Registration</button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <button class="nav-btn" onclick="openRegistration()">Registration</button>
+
     </div>
 </header>
 
@@ -37,9 +44,9 @@
     </div>
 </section>
 
-<script type="module" src="script.js"></script>
-   <div id="recaptcha-container"></div>
+<script src="script.js"></script>
+
+<div id="recaptcha-container"></div>
 
 </body>
-
 </html>
