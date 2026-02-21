@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lato, sans-serif;
+}
+
+body{
+    font-family: Lato, sans-serif;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("../img/registration-bg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    /* CENTER FORM */
+    display: flex;
+    align-items:center;
+    justify-content:flex-start ;
+}
+
+
+/* REGISTRATION CARD */
+.registration-section{
+
+    width: 400px;
+
+    padding: 30px;
+    margin-left: 120px;
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+
+    animation: fadeIn 0.6s ease;
+}
+
+
+/* TITLE */
+.registration-section h2 {
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    color: #2c3e50;
+
+    margin-bottom: 20px;
+
+    letter-spacing: 1px;
+
+    border-bottom: 3px solid #2ecc71;
+
+    display: inline-block;
+
+    padding-bottom: 5px;
+}
+
+
+/* INPUT FIELDS */
+.registration-form input,
+.registration-form textarea{
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+/* INPUT FOCUS EFFECT */
+.registration-form input:focus,
+.registration-form textarea:focus{
+
+    border-color: #2ecc71;
+
+    outline: none;
+
+    box-shadow: 0 0 5px rgba(46,204,113,0.5);
+}
+
+
+.otp-box{
+    display: flex;
+    gap: 10px;
+}
+
+.otp-box input{
+    flex: 1;
+}
+
+.otp-box button{
+    padding: 6px 12px;
+    font-size: 13px;
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+    height: 36px;
+    cursor: pointer;
+}
+
+.otp-box button:hover{
+    background: linear-gradient(135deg, #219150, #27ae60);
+}
+
+/* REGISTER BUTTON */
+.register-btn{
+
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 10px;
+
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.register-btn:hover{
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+/* SUCCESS MESSAGE */
+#successMsg{
+
+    margin-top: 15px;
+
+    font-size: 16px;
+
+    color: #27ae60;
+
+    font-weight: 600;
+
+    text-align: center;
+}
+
+
+/* ANIMATION */
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

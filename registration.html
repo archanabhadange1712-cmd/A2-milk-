@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="resources/css/registration.css">
+</head>
+<body>
+
+<section class="registration-section">
+
+<form id="registrationForm" class="registration-form">
+
+<h2>Customer Registration</h2>
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+
+<!-- ONLY ONE OTP BUTTON -->
+<div class="otp-box">
+
+    <input type="text" id="mobile"
+           placeholder="Enter mobile number"
+           maxlength="10"
+           required>
+
+    <button type="button" id="otpBtn" onclick="sendOTP()">
+        Send OTP
+    </button>
+
+</div>
+
+<input type="text" id="otp"
+       placeholder="Enter OTP"
+       maxlength="6"
+       disabled
+       required>
+
+<p id="otpMsg" style="color:green; display:none;"></p>
+
+
+
+<input type="email" id="email" placeholder="Email ID" required>
+
+<textarea id="address" placeholder="Address" required></textarea>
+
+<input type="text" id="aadhaar"
+       placeholder="Aadhaar Number"
+       pattern="[0-9]{12}"
+       maxlength="12" required>
+
+<input type="text" id="pan"
+       placeholder="PAN Number"
+       pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}" required>
+
+<label>Upload Photo</label>
+<input type="file" id="photo" accept="image/*" required>
+
+
+<!-- REGISTER BUTTON -->
+<button type="button" class="register-btn" onclick="verifyOTP()">
+    Register
+</button>
+
+<p id="successMsg" style="display:none; color:green; font-weight:600;">
+Registration Successful! Redirecting to homepage...
+</p>
+
+</form>
+
+</section>
+
+<script src="resources/js/script.js"></script>
+
+</body>
+</html>
