@@ -10,7 +10,7 @@ body{
 
     background-image:
         linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-        url("../img/registration-bg.png");
+        url("registration-bg.png");
 
     background-size: cover;
     background-position: center;
@@ -184,3 +184,4 @@ body{
     }
 
 }
+
